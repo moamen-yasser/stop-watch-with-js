@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@100&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(f4933df2bbd8480186de57194c2dd268.jpg);
+    background-size: cover;
+}
+.cont{
+    width: 500px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont h1{
+    margin-top: -10px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+.time{
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    width: 410px;
+}
+.hr , .min , .sec{
+    font-size: 15px;
+}
+.btn{
+    margin-top: 15px;
+}
+#start , #stop , #reset{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 30px;
+    text-transform: capitalize;
+    margin-right: 10px;
+    font-weight: 700;
+}
+@media only screen and (max-width:555px) {
+    .cont{
+        width: 450px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .cont{
+        width: 400px;
+    }
+    .time{
+        font-size: 40px;
+        width: 350px;
+    }
+}
+@media only screen and (max-width:440px) {
+    .cont{
+        width: 350px;
+    }
+    .cont h1{
+        font-size: 45px;
+    }
+    .time{
+        font-size: 30px;
+        width: 300px;
+    }
+}
+@media only screen and (max-width:388px) {
+    .cont{
+        width: 300px;
+    }
+    .cont h1{
+        font-size: 35px;
+    }
+    .time{
+        font-size: 25px;
+        width: 250px;
+    }
+}
+@media only screen and (max-width:330px) {
+    .cont{
+        width: 250px;
+    }
+    .cont h1{
+        font-size: 25px;
+    }
+    .time{
+        font-size: 18px;
+        width: 200px;
+    }
+    #start , #stop , #reset{
+    padding: 4px 15px;
+    }
+}
